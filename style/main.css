@@ -166,7 +166,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #eeeeee;
+    background: rgba(238, 228, 218, 0.01);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
