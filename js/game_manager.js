@@ -4,7 +4,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   = 1;
+  this.startTiles   = 4;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -59,8 +59,9 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.999999999 ? Math.random() < 0.99999999 ? Math.random() < 0.9999999 ? Math.random() < 0.999999 ? Math.random() < 0.999998 ? Math.random() < 0.999996 ? Math.random() < 0.99999 ? Math.random() < 0.99998 ? Math.random() < 0.99996 ? Math.random() < 0.9999 ? Math.random() < 0.9996 ? Math.random() < 0.998 ? 1 : 2 : 3 : 4 : 5 : 6 : 7 : 8 : 9 : 10 : 11 : 12 : 13; 
+    var value = Math.random() < 0.9999999 ? Math.random() < 0.999999 ? Math.random() < 0.99999 ? Math.random() < 0.99998 ? Math.random() < 0.99995 ? Math.random() < 0.9999 ? Math.random() < 0.9998 ? Math.random() < 0.998 ? Math.random() < 0.99 ? Math.random() < 0.98 ? Math.random() < 0.5 ? Math.random() < 0.5 ? Math.random() < 0.5 ? 1 : 2 : Math.random() < 0.5 ? 3 : 7 : Math.random() < 0.5 ? Math.random() < 0.5 ? 12 : 23 : Math.random() < 0.5 ? 26 : 29 : Math.random() < 0.5 ? 6 : 15 : Math.random() < 0.5 ? Math.random() < 0.5 ? 5 : 10 : Math.random() < 0.5 ? 19 : 25 : Math.random() < 0.5 ? Math.random() < 0.5 ? Math.random() < 0.5 ? 4 : 8 : Math.random() < 0.5 ? 9 : 11 : Math.random() < 0.5 ? Math.random() < 0.5 ? 16 : 17 : Math.random() < 0.5 ? 20 : 21 : Math.random() < 0.5 ? 13 : 27 : 18 : 22 : 14 : 30 : 24 : 28; 
     var tile = new Tile(this.grid.randomAvailableCell(), value);
+    if (tile.value === 14) this.won = true;
     
     this.grid.insertTile(tile);
   }
@@ -140,8 +141,8 @@ GameManager.prototype.move = function (direction) {
           self.score += 1;
 
           // The mighty 12 tile
-          if (merged.value === 12) self.won = true;
-          if (merged.value === 13) self.over = true;
+          if (merged.value === 14) self.won = true;
+          if (merged.value === 30) self.over = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
