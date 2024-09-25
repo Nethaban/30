@@ -68,6 +68,38 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   inner.classList.add("tile-inner");
   inner.textContent = tile.value;
+  if (tile.value === 1) inner.textContent = " ";
+  if (tile.value === 2) inner.textContent = " ";
+  if (tile.value === 3) inner.textContent = " ";
+  if (tile.value === 4) inner.textContent = " ";
+  if (tile.value === 5) inner.textContent = " ";
+  if (tile.value === 6) inner.textContent = " ";
+  if (tile.value === 7) inner.textContent = " ";
+  if (tile.value === 8) inner.textContent = " ";
+  if (tile.value === 9) inner.textContent = " ";
+  if (tile.value === 10) inner.textContent = " ";
+  if (tile.value === 11) inner.textContent = " ";
+  if (tile.value === 12) inner.textContent = " ";
+  if (tile.value === 13) inner.textContent = " ";
+  if (tile.value === 14) inner.textContent = " ";
+  if (tile.value === 15) inner.textContent = " ";
+  if (tile.value === 16) inner.textContent = " ";
+  if (tile.value === 17) inner.textContent = " ";
+  if (tile.value === 18) inner.textContent = " ";
+  if (tile.value === 19) inner.textContent = " ";
+  if (tile.value === 20) inner.textContent = " ";
+  if (tile.value === 21) inner.textContent = " ";
+  if (tile.value === 22) inner.textContent = " ";
+  if (tile.value === 23) inner.textContent = " ";
+  if (tile.value === 24) inner.textContent = " ";
+  if (tile.value === 25) inner.textContent = " ";
+  if (tile.value === 26) inner.textContent = " ";
+  if (tile.value === 27) inner.textContent = " ";
+  if (tile.value === 28) inner.textContent = " ";
+  if (tile.value === 29) inner.textContent = " ";
+  if (tile.value === 30) inner.textContent = " ";
+  if (tile.value === 31) inner.textContent = " ";
+  if (tile.value === 32) inner.textContent = " ";
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -131,7 +163,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Ahh! You got some 12s!" : "X";
+  var message = won ? "GG!" : "nvm";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -155,11 +187,11 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "12");
+  tweet.setAttribute("data-via", "30");
   tweet.textContent = "Tweet";
 
-  var text = "I spawned " + this.score + " this many tiles on 12, a game where you " +
-             "merge tiles to get 12s! #advyout";
+  var text = "I spawned " + this.score + " this many tiles on 30, a game where you " +
+             "see alts! #advyout";
   tweet.setAttribute("data-text", text);
 
   return tweet;
