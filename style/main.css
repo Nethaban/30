@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #daecff;
-  color: #2e2e2e;
+  background: #e7e7e7;
+  color: #342c2c;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
@@ -56,7 +56,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #111111;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -75,7 +75,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #dddddd; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -83,7 +83,7 @@ h1.title {
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: dddddd;
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -93,10 +93,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Tiles"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Most"; }
 
 p {
   margin-top: 0;
@@ -104,7 +104,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #222222;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -152,8 +152,8 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #bbada0;
-  border-radius: 6px;
+  background: #a3c6a7;
+  border-radius: 2px;
   width: 492px;
   height: 492px;
   -webkit-box-sizing: border-box;
@@ -166,7 +166,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: #111111;
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -186,19 +186,19 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
-      border-radius: 3px;
+      background: #6f8f66;
+      border-radius: 2px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
+      color: #f9f6f1;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message .score-sharing {      display: inline-block;      vertical-align: middle;      margin-left: 10px; }    .game-container .game-message.game-won {
-      background: #a9f1e3;
-      color: #f9f6f2; }
+      background: #e9f4f2;
+      color: #000000; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -223,7 +223,7 @@ hr {
   margin-right: 6.7px;
   float: left;
   border-radius: 3px;
-  background: #cdc1b4; }
+  background: #39683e; }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -501,52 +501,163 @@ hr {
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
   .tile .tile-inner {
-    border-radius: 3px;
+    border-radius: 1px;
     background: #ffffff;
-    color: #f9f6f2;
+    color: #ffffff;
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 30px; }
+    font-size: 1px; }
   .tile.tile-1 .tile-inner {
     color: #ffffff;
-    background: #7cbcf9; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/1 - Room__4.png'); 
+    background-size: 100% auto; }
   .tile.tile-2 .tile-inner {
     color: #ffffff;
-    background: #7cf9b3; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/3 - Atherd.png'); 
+    background-size: 100% auto; }
   .tile.tile-3 .tile-inner {
     color: #ffffff;
-    background: #bef97c; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/4 - DeeJancter.png'); 
+    background-size: 100% auto; }
   .tile.tile-4 .tile-inner {
     color: #ffffff;
-    background: #f9c27c; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/6 - DiceLegend.png'); 
+    background-size: 100% auto; }
   .tile.tile-5 .tile-inner {
     color: #ffffff;
-    background: #f97c8b; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/8 - Fluff6.png'); 
+    background-size: 100% auto; }
   .tile.tile-6 .tile-inner {
     color: #ffffff;
-    background: #e27cf9; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/9 - 47ink.png'); 
+    background-size: 100% auto; }
   .tile.tile-7 .tile-inner {
     color: #ffffff;
-    background: #857cf9; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/10 - Post16.png'); 
+    background-size: 100% auto; }
   .tile.tile-8 .tile-inner {
     color: #ffffff;
-    background: #cdcdcd; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/13 - Bariub.png'); 
+    background-size: 100% auto; }
   .tile.tile-9 .tile-inner {
     color: #ffffff;
-    background: #269c00; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/15 - 10sTheGame.png'); 
+    background-size: 100% auto; }
   .tile.tile-10 .tile-inner {
     color: #ffffff;
-    background: #009c90; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/17 - LifeOf307.png'); 
+    background-size: 100% auto; }
   .tile.tile-11 .tile-inner {
     color: #ffffff;
-    background: #eef5f5; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/18 - SpiritOf317.png'); 
+    background-size: 100% auto; }
   .tile.tile-12 .tile-inner {
     color: #ffffff;
-    background: #000000; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/19 - PolarEve.png'); 
+    background-size: 100% auto; }
   .tile.tile-13 .tile-inner {
     color: #ffffff;
-    background: #ba0c0c; }
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/20 - Ecaly.png'); 
+    background-size: 100% auto; }
+  .tile.tile-14 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/21 - TheReal145.png'); 
+    background-size: 100% auto; }
+  .tile.tile-15 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/22 - 49ink.png'); 
+    background-size: 100% auto; }
+  .tile.tile-16 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/25 - Dr_Kreeple.png'); 
+    background-size: 100% auto; }
+  .tile.tile-17 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/27 - Obi_Wan_7.png'); 
+    background-size: 100% auto; }
+  .tile.tile-18 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/29 - TheMeanFives.png'); 
+    background-size: 100% auto; }
+  .tile.tile-19 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/30 - 90DegRealm.png'); 
+    background-size: 100% auto; }
+  .tile.tile-20 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/31 - _Chimes.png'); 
+    background-size: 100% auto; }
+  .tile.tile-21 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/33 - 771347.png'); 
+    background-size: 100% auto; }
+  .tile.tile-22 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/34 - DelugeOf347.png'); 
+    background-size: 100% auto; }
+  .tile.tile-23 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/35 - Herdnaxy.png'); 
+    background-size: 100% auto; }
+  .tile.tile-24 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/37 - SpringWonders.png'); 
+    background-size: 100% auto; }
+  .tile.tile-25 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/38 - Tile__91.png'); 
+    background-size: 100% auto; }
+  .tile.tile-26 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/39 - pawtile.png'); 
+    background-size: 100% auto; }
+  .tile.tile-27 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/43 - World5.png'); 
+    background-size: 100% auto; }
+  .tile.tile-28 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/44 - FreeKill118.png'); 
+    background-size: 100% auto; }
+  .tile.tile-29 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/45 - SpectrumPride.png'); 
+    background-size: 100% auto; }
+  .tile.tile-30 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/30/46 - nastynoahs.png'); 
+    background-size: 100% auto; }
 
 @-webkit-keyframes appear {
   0% {
