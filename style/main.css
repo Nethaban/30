@@ -601,7 +601,7 @@ hr {
   .tile.tile-19 .tile-inner {
     color: #ffffff;
     background: #ffffff; 
-    background-image: url('https://nethaban.github.io/Alts/19 - PolarEve.png'); 
+    background-image: url('https://nethaban.github.io/Alts/19 - Tile__53.png'); 
     background-size: 100% auto; }
   .tile.tile-20 .tile-inner {
     color: #ffffff;
@@ -767,6 +767,11 @@ hr {
     color: #ffffff;
     background: #ffffff; 
     background-image: url('https://nethaban.github.io/Alts/52 - DidThe1003.png'); 
+    background-size: 100% auto; }
+  .tile.tile-53 .tile-inner {
+    color: #ffffff;
+    background: #ffffff; 
+    background-image: url('https://nethaban.github.io/Alts/53 - DazzlingBlocks.png'); 
     background-size: 100% auto; }
 
 @-webkit-keyframes appear {
